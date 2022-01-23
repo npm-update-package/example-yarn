@@ -16,7 +16,7 @@
     "node": "14.17.0"
   },
   "devDependencies": {
-    "@jest/types": "27.0.6",
+    "@jest/types": "27.4.2",
     "@tsconfig/node14": "1.0.1",
     "@types/jest": "27.4.0",
     "@types/node": "14.17.0",
