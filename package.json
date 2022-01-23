@@ -18,7 +18,7 @@
   "devDependencies": {
     "@jest/types": "27.0.6",
     "@tsconfig/node14": "1.0.1",
-    "@types/jest": "27.0.3",
+    "@types/jest": "27.4.0",
     "@types/node": "14.17.0",
     "@typescript-eslint/eslint-plugin": "5.10.0",
     "eslint": "8.7.0",
