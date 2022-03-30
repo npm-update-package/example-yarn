@@ -18,9 +18,11 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
       - run: |
-          git config user.name $GIT_USER_NAME
-          git config user.email $GIT_USER_EMAIL
-          npx npm-update-package --github-token $GITHUB_TOKEN --package-manager yarn
+          npx npm-update-package \
+            --github-token $GITHUB_TOKEN \
+            --git-user-name $GIT_USER_NAME \
+            --git-user-email $GIT_USER_EMAIL \
+            --package-manager yarn
         env:
           GIT_USER_EMAIL: 97396142+npm-update-package[bot]@users.noreply.github.com
           GIT_USER_NAME: npm-update-package[bot]
