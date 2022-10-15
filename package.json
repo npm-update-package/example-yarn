@@ -16,7 +16,6 @@
     "node": "16.11.1"
   },
   "devDependencies": {
-    "@jest/types": "29.2.0",
     "@tsconfig/node16": "1.0.3",
     "@types/node": "16.11.32",
     "@typescript-eslint/eslint-plugin": "5.40.0",
