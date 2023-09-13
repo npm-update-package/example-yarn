@@ -4,10 +4,9 @@
   "description": "Example for npm-update-package using Yarn",
   "private": true,
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "yarn clean && tsc --project tsconfig.build.json",
     "clean": "rimraf dist",
     "lint": "eslint '**/*.{js,ts}'",
-    "prebuild": "yarn clean",
     "prepare": "husky install",
     "start": "ts-node src/main.ts",
     "test": "jest --passWithNoTests"
