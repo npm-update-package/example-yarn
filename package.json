@@ -4,10 +4,9 @@
   "description": "Example for npm-update-package using Yarn",
   "private": true,
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "yarn clean && tsc --project tsconfig.build.json",
     "clean": "rimraf dist",
     "lint": "eslint '**/*.{js,ts}'",
-    "prebuild": "yarn clean",
     "prepare": "husky install",
     "start": "ts-node src/main.ts",
     "test": "jest --passWithNoTests"
@@ -15,6 +14,7 @@
   "engines": {
     "node": "18.17.1"
   },
+  "packageManager": "yarn@3.6.3",
   "devDependencies": {
     "@tsconfig/node18": "18.2.1",
     "@types/node": "18.17.15",
